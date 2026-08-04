@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 6</title>
+</head>
+<body>
+    <script>
+        let ope= prompt("Ingrese el signo para la ecuacion que quiere hacer(+,-,*,/)");
+        let num1= parseInt(prompt("Ingrese el primer numero"));
+        let num2= parseInt(prompt("Ingrese el segundo numero"));
+        let sum= (num1+num2);
+        let res= (num1-num2);
+        let mul= (num1*num2);
+        let div= (num1/num2);
+
+        switch (ope){
+            case "+":
+            alert("la suma es: "+sum);
+            break;
+            case "-":
+            alert("La resta es: "+res);
+            break;
+            case "*":
+            alert("La multiplicacion es: "+mul);
+            break;
+            case "/":
+            alert("La division es: "+div);
+            break;
+            default:
+            alert("El signo ingresado no corresponde a ningun signo solicitado");
+        }
+    </script>
+</body>
+</html>
