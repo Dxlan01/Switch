@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch 1</title>
 </head>
+
 <body>
     <script>
-        switch
+        let day = prompt("Ingrese un dia de la semana (1-7):");
+        switch (day) {
+            case "1":
+                alert("El 1 es el lunes");
+                break;
+            case "2":
+                alert("El 2 es el martes");
+                break;
+            case "3":
+                alert("El 3 es el miercoles");
+                break;
+            case "4":
+                alert("El 4 es el jueves");
+                break;
+            case "5":
+                alert("El 5 es el viernes");
+                break;
+            case "6":
+                alert("El 6 es el sabado");
+                break;
+            case "7":
+                alert("El 7 es el domingo");
+                break;
+            default:
+                alert("El numero ingresado no es valido");
+        }
     </script>
 </body>
+
 </html>
