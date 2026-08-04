@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 5</title>
+</head>
+<body>
+    <script>
+        let semaforo= prompt("Ingrese un color de semaforo en formato de palabra").toUpperCase();
+        switch (semaforo){
+            case "VERDE":
+            alert("Puede avanzar");
+            break;
+            case "AMARILLO":
+            alert("Tiene que ir bajando la velocidad");
+            break;
+            case "ROJO":
+            alert("Tiene que detenerse inmediatamente ");
+            break;
+            default:
+            alert("El color ingresado no corresponde a ningun color de un semaforo");
+        }
+    </script>
+</body>
+</html>
