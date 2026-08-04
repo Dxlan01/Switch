@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch 8</title>
 </head>
+
 <body>
     <script>
-        let Categoria= prompt("Ingrese categoria de cliente (V, F, N)").toUpperCase();
-        let monto= parseInt(prompt("Ingrese el monto al que le quiere hacer descuento"));
-        let Vip= (monto*20)/100;
-        let Frecuente= (monto*10)/100;
-        let total= (monto-Vip);
-        let total1=(monto-Frecuente);
-        switch(Categoria){
+        let Categoria = prompt("Ingrese categoria de cliente (V, F, N)").toUpperCase();
+        let monto = parseInt(prompt("Ingrese el monto al que le quiere hacer descuento"));
+        let Vip = (monto * 20) / 100;
+        let Frecuente = (monto * 10) / 100;
+        let total = (monto - Vip);
+        let total1 = (monto - Frecuente);
+        switch (Categoria) {
             case "V":
-            alert("Usted es cliente vip por lo que tiene 20% de descuento lo que es: "+Vip+" eso da en total: "+total);
-            break;
+                alert("Usted es cliente vip por lo que tiene 20% de descuento lo que es: " + Vip + " eso da en total: " + total);
+                break;
             case "F":
-            alert("Usted es cliente frecuente por lo que tiene 10% de descuento lo que es: "+Frecuente+" eso da en total: "+total1);
-            break;
+                alert("Usted es cliente frecuente por lo que tiene 10% de descuento lo que es: " + Frecuente + " eso da en total: " + total1);
+                break;
             case "N":
-            alert("Usted es un cliente nuevo por lo que no tiene descuento: "+monto);
-            break;
+                alert("Usted es un cliente nuevo por lo que no tiene descuento: " + monto);
+                break;
             default:
-            alert("La categoria ingresada no corresponde a ninguna de nuestro local")
+                alert("La categoria ingresada no corresponde a ninguna de nuestro local")
         }
     </script>
 </body>
+
 </html>
