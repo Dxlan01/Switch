@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 15</title>
+</head>
+
+<body>
+    <script>
+        let accion = parseInt(prompt("Ingrese la acción del personaje (1: Ataque Rápido, 2: Ataque Pesado, 3: Curación)"));
+        let estadoEnemigo = prompt("Ingrese el estado del enemigo (Defensa Activa o Normal)").toLowerCase();
+        switch (accion) {
+            case 1:
+                let dañoRapido = 20;
+                if (estadoEnemigo === "defensa activa") {
+                    dañoRapido /= 2;
+                    alert("¡Ataque Rápido mitiga por defensa! Daño final infligido: " + dañoRapido + " puntos.");
+                } else {
+                    alert("¡Ataque Rápido inflige daño! Daño final infligido: " + dañoRapido + " puntos.");
+                }
+                break;
+            case 2:
+                let dañoPesado = 45;
+                if (estadoEnemigo === "defensa activa") {
+                    dañoPesado /= 2;
+                    alert("¡Ataque Pesado mitiga por defensa! Daño final infligido: " + dañoPesado + " puntos.");
+                } else {
+                    alert("¡Ataque Pesado inflige daño! Daño final infligido: " + dañoPesado + " puntos.");
+                }
+                break;
+            case 3:
+                let curacion = 30;
+                alert("¡Curación realizada! Vida recuperada: " + curacion + " puntos.");
+                break;
+            default:
+                alert("Acción inválida. Ingrese un número del 1 al 3.");
+        }
+    </script>
+</body>
+
+</html>

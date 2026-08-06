@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 11</title>
+</head>
+
+<body>
+    <script>
+        let opcion = parseInt(prompt("Ingrese una opcion para el cajero automatico (1:Consultar saldo, 2:Depositar, 3:Retirar, 4:salir)"));
+        let saldo = 500000
+        switch (opcion) {
+            case 1:
+                alert("Su saldo actual es de $500.000 pesos");
+                break;
+            case 2:
+                let deposito = parseInt(prompt("Ingrese el monto a depositar"));
+                let total = (saldo + deposito);
+                alert("Su monto ingresado fue: " + deposito + " su total fue: " + total);
+                break;
+            case 3:
+                let retiro = parseInt(prompt("Ingrese el monto a retirar"));
+
+                if (retiro <= saldo) {
+                    let totalR = (saldo - retiro)
+                    alert("El monto a retirar fue: " + retiro + " el nuevo saldo es: " + totalR);
+                } else {
+                    alert("Saldo insufisiente")
+                }
+                break;
+            case 4:
+                alert("Gracias");
+                break;
+            default:
+                alert("El numero ingresado no corresponde a alguno de nuestros servicios");
+
+
+        }
+    </script>
+</body>
+
+</html>

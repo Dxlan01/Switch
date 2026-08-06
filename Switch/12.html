@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 12</title>
+</head>
+
+<body>
+    <script>
+        let producto = parseInt(prompt("Ingrese el codigo del producto"));
+        let dinero = parseInt(prompt("Ingrese el dinero"));
+
+        switch (producto) {
+            case 101:
+                if (dinero >= 2000) {
+                    let vuletas1 = (dinero - 2000);
+                    alert("Producto: Agua. Su cambio es: " + vuletas1);
+                } else {
+                    alert("Saldo insuficiente");
+                }
+                break;
+            case 102:
+                if (dinero >= 3500) {
+                    let vueltas2 = (dinero - 3500);
+                    alert("Producto: Gaseosa. Su cambio es: " + vueltas2);
+                } else {
+                    alert("Saldo insuficiente");
+                }
+                break;
+            case 103:
+                if (dinero >= 5000) {
+                    let vueltas3 = (dinero - 5000);
+                    alert("Producto: Energizante. Su cambio es: " + vueltas3);
+                } else {
+                    alert("Saldo insuficiente");
+                }
+                break;
+            default:
+                alert("El codigo ingresado no corresponde a ningun producto de la maquina");
+        }
+    </script>
+</body>
+
+</html>

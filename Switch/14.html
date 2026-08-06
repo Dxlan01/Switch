@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 14</title>
+</head>
+
+<body>
+    <script>
+        let conversor = parseInt(prompt("Ingrese el numero para hacer las conversiones (1:M a Km, 2: K a Lb, 3 °C a °F)"));
+        let valor = parseFloat(prompt("Ingrese el valor a convertir"));
+        switch (conversor) {
+            case 1:
+                let K = (valor / 1000)
+                alert(valor + " m es equivalente a: " + K + " km");
+                break;
+            case 2:
+                let Lb = (valor * 2.2046);
+                alert(valor + " kg es equivalente a: " + Lb + " Lb");
+                break;
+            case 3:
+                let F = (9 / 5 * valor + 32);
+                alert(valor + " °C es equivalente a: " + F + " °F");
+                break;
+            default:
+                alert("El numero ingresado no corresponde a ningun conversor. Ingrese un numero del 1 al 3");
+
+        }
+    </script>
+</body>
+
+</html>

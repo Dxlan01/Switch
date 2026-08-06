@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 13</title>
+</head>
+
+<body>
+    <script>
+        let triaje = parseInt(prompt("Ingrese el codigo de triaje del 1 al 5"));
+
+        switch (triaje) {
+            case 1:
+                alert("[NIVEL 1 - RESUCITACION]Color: ROJO. ATENCION INMEDIATA");
+                break;
+
+            case 2:
+                alert("[NIVEL 2 - EMERGENCIA]Color: NARANJA. Tiempo maximo de espera: 15 minutos");
+                break;
+            case 3:
+                alert("[NIVEL 3 - URGENCIA]Color: AMARILLO. Tiempo maximo de espera: 60 minutos");
+                break;
+            case 4:
+                alert("[NIVEL 4 - URGENCIA MENOR]Color: VERDE. Tiempo maximo de espera: 120 minutos");
+                break;
+            case 5:
+                alert("[NIVEL 5 - SIN URGENCIA]Color: AZUL. Tiempo maximo de espera: 240 minutos");
+                break;
+            default:
+                alert("El codigo de triaje es invalido. Ingrese un codigo del 1 al 5")
+        }
+    </script>
+</body>
+
+</html>

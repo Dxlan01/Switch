@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 10</title>
+</head>
+
+<body>
+    <script>
+        let tipo = prompt("Ingrese su tipo de vehiculo (M=moto, A=auto, C=camion)").toUpperCase();
+        let hora = parseInt(prompt("Ingrese el total de horas estacionado"));
+        switch (tipo) {
+            case "M":
+                alert("Su total de horas fue: " + hora + " por lo que su tarifa es: " + (2000 * hora));
+                break;
+            case "A":
+                alert("Su total de horas fue: " + hora + " por lo que su tarifa es: " + (4000 * hora));
+                break;
+            case "C":
+                alert("Su total de horas fue: " + hora + " por lo que su tarifa es: " + (8000 * hora));
+                break;
+            default:
+                alert("El tipo ingresado no corresponde a ninguno");
+        }
+    </script>
+</body>
+
+</html>
